@@ -1,4 +1,11 @@
-article, aside, figure, figcaption, footer, header, nav, section {
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section {
     display: block;
 }
 
@@ -32,4 +39,5 @@ input {
 #weather {
     width: 80%;
     margin: auto;
-}   
+    display: table-row
+}
