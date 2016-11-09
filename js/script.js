@@ -16,18 +16,17 @@ $(function () {
 				$("#api-div").hide();
 			}
 		}
-        $("#weather").empty(); 
+        	$("#weather").empty(); 
 		
 		var zipCode = $("#zip").val();
 		$("#zip").val("");
 		
 		$.getJSON("http://api.openweathermap.org/data/2.5/weather?zip=" + zipCode + ",us&units=imperial&APPID=" + weatherKey, function (data) {
-            $("#weather").append('<div id="description"></div>');
-            $("#description").append('<p>'+ data.name + ', ' + data.sys.country + ' <img src="http://openweathermap.org/img/w/' + data.weather[0].icon +'.png"></img></p>');
-            $("#description").append('<p>Temperature from '+ data.main.temp_min + ' to ' + data.main.temp_max + '</p>');
-            $("#description").append('<p>Pressure: '+ data.main.pressure +' hpa</p>');
-            $("#description").append('<p>Description: '+ data.weather[0].description + '</p>');
-            
+            		$("#weather").append('<div id="description"></div>');
+           		$("#description").append('<p>'+ data.name + ', ' + data.sys.country + ' <img src="http://openweathermap.org/img/w/' + data.weather[0].icon +'.png"></img></p>');
+            		$("#description").append('<p>Temperature from '+ data.main.temp_min + ' to ' + data.main.temp_max + '</p>');
+           		$("#description").append('<p>Pressure: '+ data.main.pressure +' hpa</p>');
+           		$("#description").append('<p>Description: '+ data.weather[0].description + '</p>');   
 		});
 	});
 });
