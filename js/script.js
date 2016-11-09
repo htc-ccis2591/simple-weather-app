@@ -1,5 +1,4 @@
 $(function () {
-    //6a0c8967e09cc17625d2caec056b907b
 	var weatherKey = "";
     var city = "";
     var country = "";
