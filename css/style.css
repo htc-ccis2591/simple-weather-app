@@ -1,4 +1,11 @@
-article, aside, figure, figcaption, footer, header, nav, section {
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section {
     display: block;
 }
 
@@ -6,6 +13,7 @@ body {
     background-color: floralwhite;
     font-family: Arial, sans-serif;
     font-size: 1.3em;
+    text-align: center;
 }
 
 header {
@@ -32,4 +40,4 @@ input {
 #weather {
     width: 80%;
     margin: auto;
-}   
+}
