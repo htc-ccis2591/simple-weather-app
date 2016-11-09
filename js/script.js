@@ -16,7 +16,7 @@ $(function () {
 				$("#api-div").hide();
 			}
 		}
-        	//$("#weather").empty(); 
+        	$("#weather").empty(); 
 		
 		var zipCode = $("#zip").val();
 		$("#zip").val("");
